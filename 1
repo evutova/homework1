@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n, k, power=0, help=1;
+  cin>>n>>k;
+  while(help<=n)
+  {
+    help=help*k;
+    power++;
+   }
+   cout<<power-1<<endl;
+   return 0;
+}
