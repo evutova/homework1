@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int a,b, sum=0, power=1, br=0, help;
+  cin>>a>>b;
+  for(int i=a;i<=b; i++)
+  {
+    help=i;
+    do
+    {
+      sum=sum+help%10;
+      power=power*help%10;
+      help=help/10;
+     }
+     while(help);
+     if(sum==power) br++;
+     sum=0;
+     power=1;
+   }
+   cout<<br<<endl;
+   return 0;
+  }
