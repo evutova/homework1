@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b, br=0;
+  cin>>a>>b;
+  do
+  {
+    if(a%10==b%10) br++;
+    a=a/10;
+    b=b/10;
+  }
+  while(a)
+  cout<<br;
+}
