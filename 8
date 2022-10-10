@@ -1,0 +1,38 @@
+  #include<iostream>
+  using namespace std;
+  int main()
+  {
+    int n, linep, e, b, lineh;
+    cin>>n;
+    for(linep=1;linep<=n; linep++)
+    {
+      for(e=0;e<4-linep; e++)
+      {
+        cout<<" ";
+      }
+      cout<<"/";
+      for(e=0;e<(linep-1)*2;e++)
+      {
+        cout<<" ";
+      }
+      cout<<"\"<<endl;
+    }
+    for(b=0;b<n*2;b++)
+    {
+      cout<<"-";
+    }
+    cout<<endl;
+    for(lineh=0;lineh<n;lineh++)
+    {
+      cout<<"|";
+      for(e=0;e<n-2;e++)
+      {
+        cout<<" ";
+      }
+      cout<<"|"<<endl;
+    }
+    for(b=0;b<n*2;b++)
+    {
+      cout<<"=";
+    }
+  }
