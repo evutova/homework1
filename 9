@@ -4,7 +4,7 @@ int main()
 {
   int a, b, power1=1, sum1=0, power2=1, sum2=0,x;
   cin>>a>>b;
-  for(int i=a;i<=b;i++)
+  for(int i=a+1;i<b;i++)
   {
     x=i;
     for(int br=0;br<3;br++)
@@ -23,4 +23,5 @@ int main()
      power2=1;
      sum2=0;
   }
+  return 0;
 }
