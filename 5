@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int n, x=1, line=1;
+  cin>>n;
+  while(x+line-1<=n)
+  {
+    for(int i=0;i<line; i++)
+    {
+      cout<<x<<" ";
+      x++;
+    }
+    line++;
+    cout<<endl;
+  }
+  for(int k=x;k<=n; k++)
+  {
+    cout<<k<<" ";
+    k++;
+  }
+}
