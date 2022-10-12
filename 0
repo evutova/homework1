@@ -15,6 +15,7 @@ int main()
         x=x/2;
     }
     while(x);
+    maxbr= max(maxbr,br);
     cout<<maxbr<<endl;
     return 0;
 }
